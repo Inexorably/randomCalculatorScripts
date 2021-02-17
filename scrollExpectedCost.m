@@ -2,8 +2,8 @@
 
 %Some input vars.
 internaliterations = 30000;
-numSlots = 7;
-baseItemValue = 0.15; %In b
+numSlots = 10;
+baseItemValue = 0.5; %In b
 cost10 = 0.001;
 cost30 = 0.01;
 costWS = 0.5;
@@ -88,7 +88,7 @@ end
 
 %Plot the results.
 figure
-title(['Cost per successful +7 ' num2str(internaliterations) ' runs per condition with ' num2str(baseItemValue) 'b item base cost'])
+title(['Cost per successful + ' num2str(numSlots) ' ' num2str(internaliterations) ' runs per condition with ' num2str(baseItemValue) 'b item base cost'])
 hold on
 grid on
 for ii=1:5
